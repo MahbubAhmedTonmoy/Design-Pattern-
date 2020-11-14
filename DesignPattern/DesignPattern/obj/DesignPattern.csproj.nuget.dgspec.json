@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[16.2.0, )"
             },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[1.0.1, )"
