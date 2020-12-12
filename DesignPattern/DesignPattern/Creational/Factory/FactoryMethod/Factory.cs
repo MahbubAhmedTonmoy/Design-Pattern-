@@ -6,6 +6,9 @@ using System.Text;
 
 namespace DesignPattern.Creational.Factory.FactoryMethod
 {
+    /*
+     * Factory Method হচ্ছে বিশেষ ধরনের Method, যেটা রিকোয়েস্টেড সার্ভিস ক্লাসের Object Return করে ।
+     */
     public enum VehicleType
     {
         Car,
@@ -14,27 +17,27 @@ namespace DesignPattern.Creational.Factory.FactoryMethod
     }
     public interface IVehicle
     {
-        void Run();
+        string Run();
     }
     public class Car : IVehicle
     {
-        public void Run()
+        public string Run()
         {
-            Debug.WriteLine("Car is running");
+            return "Car is running";
         }
     }
     public class MotorBike : IVehicle
     {
-        public void Run()
+        public string Run()
         {
-            Debug.WriteLine("Car is running");
+            return "bike is running";
         }
     }
     public class Bus : IVehicle
     {
-        public void Run()
+        public string Run()
         {
-            Debug.WriteLine("Car is running");
+           return "Bus is running";
         }
     }
 

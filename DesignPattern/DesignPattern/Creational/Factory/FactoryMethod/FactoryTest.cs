@@ -13,7 +13,7 @@ namespace DesignPattern.Creational.Factory.FactoryMethod
         {
             IVehicleFactory vehicleFactory = new Factory(VehicleType.Car);
             IVehicle vehicle = vehicleFactory.CreateVehicle();
-
+            vehicle.Run().Should().Equals("Car is running");
             vehicle.Should().NotBeNull();
             vehicle.GetType().Name.Should().Equals("Car");
         }
