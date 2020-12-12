@@ -4,6 +4,10 @@ using System.Text;
 
 namespace DesignPattern.Creational.SingleTon
 {
+    /// <summary>
+    /// “দেখ আমাদের এপ্লিকেশনের লাইফ সাইকেলে এমন কিছু অবজেক্টের দরকার পরে যারা পুরো এপ্লিকেশন জুড়ে একটাই থাকবে।
+    /// মানে পুরা এপ্লিকেশন এ একটা মাত্র অবজেক্ট থাকবে  এবং ঐ একটা অবজেক্ট কেই সবাই এক্সেস করতে পারবে । 
+    /// </summary>
     public class Singleton
     {
         /*

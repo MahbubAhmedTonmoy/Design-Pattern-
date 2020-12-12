@@ -3,6 +3,19 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// কি ? : একটি কমন ইন্টারফেসের মাধ্যমে এক বা একাধিক কমপ্লেক্স অবজেক্ট তৈরি করা ।
+/// কেনো করব? :এমন অনেক সময় আসে যখন এপ্লিকেশনে ছোট ছোট অনেক গুলো অবজেক্ট নিয়ে একটি বড় অবজেক্ট বানানোর দরকার পড়ে । 
+/// তখন Builder Pattern অনেক দরকারি হয়ে পড়ে। 
+/// এর সাথে Abstract Factory Pattern এর বৈসাদৃশ্য হচ্ছে বড় অবজেক্ট বানানোর সময় প্রতিটা ধাপ আমরা নিজে ঠিক করে দেই ।
+/// Abstract Factory Pattern এ আমরা শুধু ফাইনাল অবজেক্ট টা পেয়ে থাকি কোনও রকম স্টেপ ঠিক করে দেয়া ছাড়াই ।
+/// ------------------------------------------------
+/// - 3 Components are Builder, Product, Director
+///- Director responsible for only building product sequentially.Control building flows.
+///- Product is the altemate object that needs to build step by step.
+///- Builder is responsible for building concreate product.
+/// </summary>
+
 namespace DesignPattern.Creational.Builder
 {
     public interface ICarBuilder
