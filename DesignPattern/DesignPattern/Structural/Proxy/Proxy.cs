@@ -4,6 +4,10 @@ using System.Text;
 
 namespace DesignPattern.Structural.Proxy
 {
+    /// <summary>
+    /// অন্য  ক্লাস এর দায়িত্ব পালন করে 
+    /// hide original objcet and control access to it
+    /// </summary>
     class Proxy
     {
     }
@@ -19,8 +23,6 @@ namespace DesignPattern.Structural.Proxy
         {
             return ammount;
         }
-
-        
     }
 
     public class ATMService : IBank

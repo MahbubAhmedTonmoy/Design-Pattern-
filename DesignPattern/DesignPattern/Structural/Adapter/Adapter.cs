@@ -5,6 +5,10 @@ using System.Text;
 
 namespace DesignPattern.Structural.Adapter
 {
+    /// <summary>
+    ///  Adapter can be classified in 2 ways i) Class adapter: Implement based on inheritence.(is a relation)
+    ///  and ii) Object adapter: Implement based on composition.(has a relation)
+    /// </summary>
     public interface IClientTarget
     {
         int Sum(int[] numbers);

@@ -5,7 +5,15 @@ using System.Text;
 
 namespace DesignPattern.Structural.Decorator
 {
-   
+    /// <summary>
+    /// অবজেক্ট আর সাথে রান টাইম এ নতুন  ফিচার  যোগ  করা যায় 
+    /// wrapper (text-> bold -> italic)
+    /// add additional features / behaviour to a particular instance of a class, while not modifying the other instance of same class
+    /// </summary>
+    /// 
+    /// Very similar to adapter and Proxy design pattern. Adapter provide new interface,  
+    /// Proxy provide same interface for exising object. Decorator provide enhanced interface.
+    /// ///
     public interface IWritter
     {
         void write(string data);
