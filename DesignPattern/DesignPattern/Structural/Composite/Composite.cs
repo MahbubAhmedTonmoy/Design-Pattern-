@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// 3 Components are exists here. i) Component: A interface ii) Composit: A children who can
+/// store other children(Node/Leaf) iii) Leaf: A children implement Component
+/// ছোট ছোট অবজেক্ট নিয়ে কমপ্লেক্স অবজেক্ট হয়। 
+/// অবজেক্ট গুলো ট্রি স্ট্রাকচার এ থাকে, কাজ করে এমন  ভাবে যেনো  মনে হয় তারা আলাদা অবজেক্ট
+/// </summary>
 namespace DesignPattern.Structural.Composite
 {
     /// <summary>
