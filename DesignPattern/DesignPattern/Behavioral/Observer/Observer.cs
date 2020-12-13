@@ -5,15 +5,23 @@ using System.Text;
 
 namespace DesignPattern.Behavioral.Observer
 {
+    /// <summary>
+    /// 2 main components i) Subject(Publisher who maintain observers collection and notify them)
+    /// ii) Observer(subscribers who are listening)
+    /// Publisher-Subscripber pattern and Observer pattern has little difference.
+    /// Pub/Sub is asynchonous and use Message Broker for communicating.
+    /// </summary>
     public class Observer
     {
     }
-
-    public class VideoCreator
+    /// <summary>
+    /// subject class
+    /// </summary>
+    public class YouTubeChannel
     {
         private readonly Queue<MyYoutubeChannel> upcommingVideo = new Queue<MyYoutubeChannel>();
         private readonly List<IListener> MySubscribers = new List<IListener>();
-        public VideoCreator()
+        public YouTubeChannel()
         {
             upcommingVideo.Enqueue(new MyYoutubeChannel { Id = 1, VideoLink = "part1" });
             upcommingVideo.Enqueue(new MyYoutubeChannel { Id = 2, VideoLink = "part2" });

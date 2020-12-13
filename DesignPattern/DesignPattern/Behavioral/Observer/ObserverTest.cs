@@ -9,7 +9,7 @@ namespace DesignPattern.Behavioral.Observer
 {
     public class ObserverTest
     {
-        private readonly VideoCreator videoCreator = new VideoCreator();
+        private readonly YouTubeChannel videoCreator = new YouTubeChannel();
 
         [Fact]
         public void ShouldRegisterListner()

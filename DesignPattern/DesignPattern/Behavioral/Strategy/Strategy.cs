@@ -4,6 +4,9 @@ using System.Text;
 
 namespace DesignPattern.Behavioral.Strategy
 {
+    /// <summary>
+    ///  রানটাইমে কোনও এলগরিদম অথবা কোনও অবজেক্টের কমন বিহেভিওর চেঞ্জ করতে এই প্যাটার্নের জুড়ি নেই ।
+    /// </summary>
     public class Strategy
     {
     }

@@ -4,9 +4,10 @@ using System.Text;
 
 namespace DesignPattern.Behavioral.State
 {
-   // 2 Components 1) Context 2) State.Context hold State reference.
+    // 2 Components 1) Context 2) State.Context hold State reference.
 
     /// <summary>
+    /// অবজেক্ট এর বেহিভার পরিবর্তন  হয়  অবজেক্ট এর  স্টেট চেঞ্জ এর উপর ভিক্তি  করে 
     /// state interface
     /// </summary>
     public interface IState
