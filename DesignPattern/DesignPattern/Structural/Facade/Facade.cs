@@ -5,6 +5,11 @@ using System.Text;
 
 namespace DesignPattern.Structural.Facade
 {
+    /// <summary>
+    /// Façade প্যাটার্ন আমাদের একটি সিম্পল ইন্টারফেস এর মাধ্যমে পুরো একটি সাবসিস্টেম কে রিপ্রেজেন্ট করতে সাহায্য করে 
+    /// Implement a single interface that delegate request to subsystems.
+    /// Simpler interface for complex module/subsystem.
+    /// </summary>
     public interface IHRFacade
     {
         IEnumerable<Employee> GetAllEmployees();
@@ -17,11 +22,11 @@ namespace DesignPattern.Structural.Facade
         private readonly IEmployeeService employeeService;
         private readonly IDepartmentService departmentService;
         private readonly IManagerService managerService;
-        public HRFacade(IEmployeeService employeeService, IDepartmentService departmentService, IManagerService managerService)
+        public HRFacade()
         {
-            this.employeeService = employeeService;
-            this.departmentService = departmentService;
-            this.managerService = managerService;
+            this.employeeService =new EmployeeService();
+            this.departmentService =new DepartmentService();
+            this.managerService =new ManagerService();
         }
         public IEnumerable<Department> GetAllDepartments()
         {
