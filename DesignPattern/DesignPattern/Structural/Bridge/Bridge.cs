@@ -5,6 +5,11 @@ using System.Text;
 
 namespace DesignPattern.Structural.Bridge
 {
+    /// <summary>
+    /// Main goal is to seperate the abstraction from implementation so that they can vary independently.
+    /// 2 parts 1) Abstraction 2) Implementation.
+    ///  Client code can use only abstraction.
+    /// </summary>
     public class Bridge
     {
     }
@@ -131,5 +136,41 @@ namespace DesignPattern.Structural.Bridge.Notification_Information
             Debug.WriteLine($"Sending Sms:{message}");
         }
 
+    }
+}
+
+namespace DesignPattern.Structural.Bridge.OS
+{
+    public interface ISchedulingAlgorithm
+    {
+        string ApplyAlgorithm();
+    }
+    public class RoundRobin : ISchedulingAlgorithm
+    {
+        public string ApplyAlgorithm()
+        {
+            return "RoundRobin";
+        }
+    }
+    public abstract class AbstractOsBridge
+    {
+        protected ISchedulingAlgorithm schedulingAlgorithm;
+        protected AbstractOsBridge(ISchedulingAlgorithm schedulingAlgorithm)
+        {
+            this.schedulingAlgorithm = schedulingAlgorithm;
+        }
+        public abstract void ExecuteAlgorithm();
+    }
+    public class Windows : AbstractOsBridge
+    {
+        public Windows(ISchedulingAlgorithm schedulingAlgorithm):base(schedulingAlgorithm)
+        {
+
+        }
+
+        public override void ExecuteAlgorithm()
+        {
+            schedulingAlgorithm.ApplyAlgorithm();
+        }
     }
 }
