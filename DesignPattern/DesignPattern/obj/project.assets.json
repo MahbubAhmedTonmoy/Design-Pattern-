@@ -6724,11 +6724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+      "projectUniqueName": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
       "projectName": "DesignPattern",
-      "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+      "projectPath": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
       "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Design-Pattern-\\DesignPattern\\DesignPattern\\obj\\",
+      "outputPath": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6745,6 +6745,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6756,6 +6757,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "FluentAssertions": {
             "target": "Package",
@@ -6797,7 +6799,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
