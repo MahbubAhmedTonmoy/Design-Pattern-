@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "db48d4fb-35b3-4112-ba2a-f4322c30d653": {
+      "ProjectGuid": "db48d4fb-35b3-4112-ba2a-f4322c30d653",
+      "DisplayName": "DesignPattern",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

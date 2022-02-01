@@ -17,7 +17,7 @@ namespace DesignPattern.Structural.FlyWeight
                 circle.Draw();
             }
             Console.WriteLine("\n Green color Circles ");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++) 
             {
                 Circle circle = (Circle)ShapeFactory.GetShape("circle");
                 circle.SetColor("Green");
