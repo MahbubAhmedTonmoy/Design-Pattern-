@@ -6719,7 +6719,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6727,11 +6727,11 @@
       "projectUniqueName": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
       "projectName": "DesignPattern",
       "projectPath": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
-      "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "E:\\Mahbub\\Design-Pattern-\\DesignPattern\\DesignPattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6739,9 +6739,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\ahmed.mahbub\\.nuget": {},
-        "http://nuget.selise.biz/nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.selise.biz/nuget": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -6799,7 +6798,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

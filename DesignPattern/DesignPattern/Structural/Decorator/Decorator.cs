@@ -14,10 +14,15 @@ namespace DesignPattern.Structural.Decorator
     /// Very similar to adapter and Proxy design pattern. Adapter provide new interface,  
     /// Proxy provide same interface for exising object. Decorator provide enhanced interface.
     /// ///
+    /// 
+
+    //component
     public interface IWritter
     {
         void write(string data);
     }
+
+    //concrete component
     public class textWritter : IWritter
     {
         private FileInfo fileInfo = new FileInfo("ReportFile.txt");
@@ -31,6 +36,7 @@ namespace DesignPattern.Structural.Decorator
         }
     }
 
+    //decorator
     public abstract class WriterDecorator : IWritter
     {
         protected readonly IWritter writter;
@@ -45,7 +51,7 @@ namespace DesignPattern.Structural.Decorator
             writter.write(data);
         }
     }
-
+    //ConcreteDecorator A...
     public class JsonWriterDecorator : WriterDecorator
     {
         public JsonWriterDecorator(IWritter writter):base(writter)
@@ -59,6 +65,7 @@ namespace DesignPattern.Structural.Decorator
             return true;
         }
     }
+    //ConcreteDecorator B...
     public class XmlWriterDecorator : WriterDecorator
     {
         public XmlWriterDecorator(IWritter writter) : base(writter)
